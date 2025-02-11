@@ -1,50 +1,58 @@
-# React + TypeScript + Vite
+**Project Overview**
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The website will help users explore pets available for adoption, provide detailed care tips, and facilitate user interactions like applying for adoption, tracking applications, and donating to support the center.
 
-Currently, two official plugins are available:
+**Core Website Features**
+1. Home Page
+Features:
+Hero section with a call-to-action (CTA) to "Adopt Now" and "Donate."
+Showcase featured pets in a card layout.
+Information about the center’s mission.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+2. Navigation
+Sections:
+Home | Adopt | Wishlist | Resources | About Us | Contact Us | Donate
+Hamburger menu for mobile screens.
 
-## Expanding the ESLint configuration
+3. Pet Listings Page
+Features:
+Grid layout of pet cards (photo, name, breed, age, and a quick "Add to Wishlist" button).
+Filter options for species, breed, age, size, and gender.
+Pagination or infinite scrolling for large datasets.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+4. Pet Details Page
+Features:
+Detailed information about the pet (name, age, size, temperament, care needs).
+Photo gallery with zoom and thumbnail navigation.
+CTA buttons: "Adopt Now" and "Add to Wishlist."
 
-- Configure the top-level `parserOptions` property like this:
+5. Wishlist Page
+Features:
+List view of saved pets with the ability to remove items.
+Link to each pet’s detail page.
+6. Adoption Form
+Features:
+User details (name, address, contact information).
+Questions about the adopter's home environment and experience with pets.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+7. Blog/Resources Section
+Features:
+Articles on pet care, training, and adoption success stories.
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+8. About Us
+Features:
+Team and mission statement.
+Photo gallery or video about the adoption center.
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+9. Contact Us
+Features:
+Contact form for inquiries.
+Embedded map for directions.
+Social media links.
+
+10. Donation Page
+Features:
+Multiple donation tiers.
+Payment gateway integration (e.g., Stripe, PayPal).
+Acknowledgment message or email upon successful donation.
