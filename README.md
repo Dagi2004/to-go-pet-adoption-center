@@ -51,7 +51,7 @@ Contact form for inquiries.
 Embedded map for directions.
 Social media links.
 
-10. Donation Page
+10.* Donation Page*
 Features:
 Multiple donation tiers.
 Payment gateway integration (e.g., Stripe, PayPal).

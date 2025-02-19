@@ -59,9 +59,9 @@ resetForm();
                 onChange={handleChange}
             />
             </div>
-            <div>
+        
 
-            </div>
+            
             <div className="mb-4 ">
             <label htmlFor="text-area">Message Box</label>
             <textarea name="text-area" id="text-area" value={values.message}

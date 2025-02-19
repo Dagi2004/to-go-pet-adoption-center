@@ -5,6 +5,7 @@ export interface ButtonProps{
   buttonLabel:string
 backgroundColor:"purple"| "blue"
 buttonSize?:string
+action?:()=>void
 
 }
 export interface FAQItem{
@@ -22,7 +23,7 @@ export interface TestimonialProps{
   description:string
 }
 export interface ServiceCardProps{
- 
   description:string
   image:string
 } 
+

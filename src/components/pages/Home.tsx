@@ -27,9 +27,11 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import Header from "../layout/Header";
 import Footer from "../layout/Footer";
+import { useNavigate } from "react-router-dom";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 
 const Home: React.FC = () => {
+  const navigate=useNavigate()
   const[adopt,setAdopt]=useState(0);
   const finalcountpet=5000;
   const finalcountvolunteer=300;
@@ -102,7 +104,7 @@ description:"When we first met Bella at the adoption center, she was shy and hes
               Find Love, Save Life Make a Difference
             </h1>
             <div className="px-12 flex justify-center md:justify-start gap-7 items-center md:items-start">
-              <Button buttonLabel="Adpot " backgroundColor="blue" buttonSize="text-lg" />
+              <Button buttonLabel="Adpot " backgroundColor="blue" buttonSize="text-lg" action={()=>navigate("/petlisting")} />
               <Button buttonLabel="Donate" backgroundColor="purple" buttonSize="text-lg" />
             </div>
           </div>
@@ -133,7 +135,7 @@ description:"When we first met Bella at the adoption center, she was shy and hes
 
           <h2 className="text-center font-semibold md:text-3xl text-xl text-[#5BCBFF] mb-5">Discover Our Mission and Values</h2>
           <div className=" flex flex-col md:flex-row items-center justify-between gap-7 md:gap-4">
-            <div className="md:w-1/2 w-ful flex justify-center">
+            <div className="md:w-1/2 w-full flex justify-center">
               <img src={mission} alt="Mission" className="rounded-lg " />
             </div>
             <div className="md:w-1/2 text-center   bg-[#FCF2E5] p-8  rounded-lg shadow-md">
@@ -191,7 +193,7 @@ description:"When we first met Bella at the adoption center, she was shy and hes
               </p>
             </div>
             <div className="mt-4">
-              <Button buttonLabel="Donate" backgroundColor="purple" buttonSize="text-lg" />
+              <Button buttonLabel="Donate" backgroundColor="purple" buttonSize="text-lg"  />
             </div>
 
           </div>
